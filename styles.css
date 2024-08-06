@@ -1,0 +1,141 @@
+body {
+    font-family: 'Comic Sans MS', cursive; /* A fun font */
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff69b4; /* Hot pink header */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#resume, #certificates {
+    margin-bottom: 40px;
+}
+
+.resume-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#certificates {
+    position: relative;
+    padding: 20px;
+}
+
+.certificates-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between certificates */
+    padding: 10px 0; /* Add padding to top and bottom */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.certificate {
+    flex: 0 0 auto; /* Prevent certificates from shrinking */
+    width: 100%;
+    max-width: 300px; /* Adjust based on your design */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.certificate h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+
+
+
+.project {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #333;
+    line-height: 1.6;
+}
+.contact-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.contact-item i {
+    font-size: 1.2em; /* Adjust size of the icon */
+}
+
+
+/* Add more styles as needed */
